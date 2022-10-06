@@ -1,2 +1,6 @@
-with open("C:\\Users\\yairr\\Desktop\\test.txt", 'w') as f:
-	f.write("success")
+from anki.lang import _
+from aqt import mw
+
+from .addDay import *
+
+addOneDayDelay(getReviewCards())
